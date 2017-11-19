@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label18.Text" xml:space="preserve">
+    <value>Come create a crazy MadLib about your favorite holiday!
+Simply fill in the blanks and select your favorite relative, holiday, and season.
+This game works best if each answer is unique. For examples of each word click the corresponding button below.
+When the form is completed press "Make My Story" and watch it come to life!</value>
+  </data>
 </root>
