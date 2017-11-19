@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MadLibsForm
     Private Sub btnNameExamples_Click(sender As Object, e As EventArgs) Handles btnNameExamples.Click
         lblExamples.Text = "Ex. Sally, Chase, Renee, Ben, Chris, Luke, Santa, Tim, James"
     End Sub
@@ -24,12 +24,18 @@
     End Sub
 
     Private Sub btnMakeMyStory_Click(sender As Object, e As EventArgs) Handles btnMakeMyStory.Click
+        ' Create an instance of the StoryForm.
+        Dim frmStory As New Story
+
         ' Variables to hold input data.
         Dim strRelative As String
         Dim strSeasons As String
         Dim strHoliday As String
         Dim strFigure As String
-        Dim strStory As String
+        Dim strError As String
+
+        ' Determine error string as message.
+        strError = "Please select an option!"
 
         ' Determine which Relative Radio Button is selected.
         If radMother.Checked = True Then
@@ -44,6 +50,8 @@
             strRelative = "Aunt"
         ElseIf radUncle.Checked = True Then
             strRelative = "Uncle"
+        Else
+            MessageBox.Show(strError)
         End If
 
         ' Determine which Season Radio Button is selected
@@ -55,6 +63,8 @@
             strSeasons = "Fall"
         ElseIf radWinter.Checked = True Then
             strSeasons = "Winter"
+        Else
+            MessageBox.Show(strError)
         End If
 
         'Determine which Holiday Radio Button is selected
@@ -76,9 +86,77 @@
         ElseIf radThanksgiving.Checked = True Then
             strHoliday = "Thanksgiving"
             strFigure = "The Great Turkey"
+        Else
+            MessageBox.Show(strError)
         End If
 
-        ' Create message box for story and link story.
-        MessageBox.Show(("All ") & txtNameRepeated.Text & (" wanted for ") & strHoliday & (" was the ") & txtAdjectiveRepeated.Text(" ") & txtNounOneRepeated.Text("."))
+        ' Display Title and Story Information.
+        frmStory.Show()
+        frmStory.lblTitle.Text = txtNameRepeated.Text & "'s Holiday Adventure!!"
+        frmStory.lblStory.Text = txtNameRepeated.Text &
+            " wanted the " & txtAdjectiveRepeated.Text &
+            " " & txtNounOneRepeated.Text & " for " &
+            strHoliday & " since " & strSeasons & " " & txtYearA.Text &
+            " when " & strRelative & " " & txtNameA.Text &
+            " " & txtPastTenseVerbA.Text & " in with a " &
+            txtNounOneRepeated.Text &
+            ". After putting it on all of the " & txtNumberA.Text &
+            " spots on their " & strHoliday & " list, " &
+            txtNameRepeated.Text & " set out " & txtNumberB.Text &
+            " " & txtPluralNounA.Text & " for " &
+            strFigure & " and went to their " &
+            txtAdjectiveA.Text & " bed to sleep. " &
+            txtNumberC.Text & " hours later " &
+            txtNameRepeated.Text & " awakes, " &
+            txtAdverbA.Text & " running downstairs to see what lay under the family " &
+            txtNounTwoRepeated.Text & ". Alas, " & txtNameRepeated.Text &
+            "'s " & txtAdjectiveRepeated.Text & " " &
+            txtNounOneRepeated.Text &
+            " was nowhere to be found, and all that lay under the " &
+            txtNounTwoRepeated.Text & " was a " &
+            txtAdjectiveB.Text & " " & txtNounB.Text &
+            ". As " & txtNameRepeated.Text & " " & txtPastTenseVerbB.Text &
+            " and cried, out came their " & strRelative &
+            " holding two " & txtAdjectiveRepeated.Text &
+            " " & txtNounOneRepeated.Text & "s! " &
+            txtNameRepeated.Text & " was overjoyed and " &
+            strHoliday & " was saved."
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Clear textboxes and reset focus.
+        txtAdjectiveA.Clear()
+        txtAdjectiveB.Clear()
+        txtAdjectiveRepeated.Clear()
+        txtAdverbA.Clear()
+        txtNameA.Clear()
+        txtNameRepeated.Clear()
+        txtNounB.Clear()
+        txtNounOneRepeated.Clear()
+        txtNounTwoRepeated.Clear()
+        txtNumberA.Clear()
+        txtNumberB.Clear()
+        txtNumberC.Clear()
+        txtPastTenseVerbA.Clear()
+        txtPastTenseVerbB.Clear()
+        txtPluralNounA.Clear()
+        txtYearA.Clear()
+
+        txtNameRepeated.Focus()
+
+        ' Clear help label.
+        lblExamples.Text = String.Empty
+
+        ' Set Radio Buttons
+        radSpring.Select()
+        radMother.Select()
+        radChristmas.Select()
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        'Close the form.
+        Me.Close()
     End Sub
 End Class
