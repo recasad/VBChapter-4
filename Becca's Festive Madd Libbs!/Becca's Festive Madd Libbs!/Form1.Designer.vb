@@ -395,7 +395,7 @@ Partial Class MadLibsForm
         Me.GroupBox1.Controls.Add(Me.txtPastTenseVerbB)
         Me.GroupBox1.Controls.Add(Me.txtNameRepeated)
         Me.GroupBox1.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(131, 258)
+        Me.GroupBox1.Location = New System.Drawing.Point(133, 206)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(265, 489)
         Me.GroupBox1.TabIndex = 36
@@ -411,7 +411,7 @@ Partial Class MadLibsForm
         Me.GroupBox2.Controls.Add(Me.radChristmas)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(600, 258)
+        Me.GroupBox2.Location = New System.Drawing.Point(602, 206)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(174, 213)
         Me.GroupBox2.TabIndex = 37
@@ -491,7 +491,7 @@ Partial Class MadLibsForm
         Me.GroupBox3.Controls.Add(Me.radSpring)
         Me.GroupBox3.Controls.Add(Me.Label20)
         Me.GroupBox3.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(409, 477)
+        Me.GroupBox3.Location = New System.Drawing.Point(411, 425)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(178, 159)
         Me.GroupBox3.TabIndex = 38
@@ -560,7 +560,7 @@ Partial Class MadLibsForm
         Me.GroupBox4.Controls.Add(Me.radMother)
         Me.GroupBox4.Controls.Add(Me.Label19)
         Me.GroupBox4.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(409, 258)
+        Me.GroupBox4.Location = New System.Drawing.Point(411, 206)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(174, 213)
         Me.GroupBox4.TabIndex = 38
@@ -645,7 +645,7 @@ Partial Class MadLibsForm
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("High Tower Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(29, 45)
+        Me.Label18.Location = New System.Drawing.Point(21, 19)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(861, 76)
         Me.Label18.TabIndex = 39
@@ -655,7 +655,7 @@ Partial Class MadLibsForm
         'btnNameExamples
         '
         Me.btnNameExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNameExamples.Location = New System.Drawing.Point(101, 159)
+        Me.btnNameExamples.Location = New System.Drawing.Point(103, 107)
         Me.btnNameExamples.Name = "btnNameExamples"
         Me.btnNameExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnNameExamples.TabIndex = 40
@@ -665,7 +665,7 @@ Partial Class MadLibsForm
         'btnAdjectiveExamples
         '
         Me.btnAdjectiveExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdjectiveExamples.Location = New System.Drawing.Point(449, 159)
+        Me.btnAdjectiveExamples.Location = New System.Drawing.Point(451, 107)
         Me.btnAdjectiveExamples.Name = "btnAdjectiveExamples"
         Me.btnAdjectiveExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnAdjectiveExamples.TabIndex = 41
@@ -675,7 +675,7 @@ Partial Class MadLibsForm
         'btnNounExamples
         '
         Me.btnNounExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNounExamples.Location = New System.Drawing.Point(217, 159)
+        Me.btnNounExamples.Location = New System.Drawing.Point(219, 107)
         Me.btnNounExamples.Name = "btnNounExamples"
         Me.btnNounExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnNounExamples.TabIndex = 42
@@ -685,7 +685,7 @@ Partial Class MadLibsForm
         'btnPastTenseVerbExamples
         '
         Me.btnPastTenseVerbExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPastTenseVerbExamples.Location = New System.Drawing.Point(681, 159)
+        Me.btnPastTenseVerbExamples.Location = New System.Drawing.Point(683, 107)
         Me.btnPastTenseVerbExamples.Name = "btnPastTenseVerbExamples"
         Me.btnPastTenseVerbExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnPastTenseVerbExamples.TabIndex = 44
@@ -695,7 +695,7 @@ Partial Class MadLibsForm
         'btnPluralNounExamples
         '
         Me.btnPluralNounExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPluralNounExamples.Location = New System.Drawing.Point(333, 159)
+        Me.btnPluralNounExamples.Location = New System.Drawing.Point(335, 107)
         Me.btnPluralNounExamples.Name = "btnPluralNounExamples"
         Me.btnPluralNounExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnPluralNounExamples.TabIndex = 48
@@ -705,7 +705,7 @@ Partial Class MadLibsForm
         'btnAdverbExamples
         '
         Me.btnAdverbExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdverbExamples.Location = New System.Drawing.Point(565, 159)
+        Me.btnAdverbExamples.Location = New System.Drawing.Point(567, 107)
         Me.btnAdverbExamples.Name = "btnAdverbExamples"
         Me.btnAdverbExamples.Size = New System.Drawing.Size(110, 60)
         Me.btnAdverbExamples.TabIndex = 50
@@ -715,7 +715,7 @@ Partial Class MadLibsForm
         'lblExamples
         '
         Me.lblExamples.Font = New System.Drawing.Font("High Tower Text", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExamples.Location = New System.Drawing.Point(51, 222)
+        Me.lblExamples.Location = New System.Drawing.Point(53, 170)
         Me.lblExamples.Name = "lblExamples"
         Me.lblExamples.Size = New System.Drawing.Size(806, 22)
         Me.lblExamples.TabIndex = 51
@@ -724,7 +724,7 @@ Partial Class MadLibsForm
         'btnMakeMyStory
         '
         Me.btnMakeMyStory.Font = New System.Drawing.Font("High Tower Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMakeMyStory.Location = New System.Drawing.Point(220, 787)
+        Me.btnMakeMyStory.Location = New System.Drawing.Point(192, 701)
         Me.btnMakeMyStory.Name = "btnMakeMyStory"
         Me.btnMakeMyStory.Size = New System.Drawing.Size(457, 60)
         Me.btnMakeMyStory.TabIndex = 52
@@ -734,7 +734,7 @@ Partial Class MadLibsForm
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("High Tower Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(335, 853)
+        Me.btnClear.Location = New System.Drawing.Point(307, 767)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(117, 79)
         Me.btnClear.TabIndex = 53
@@ -744,7 +744,7 @@ Partial Class MadLibsForm
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("High Tower Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(458, 853)
+        Me.btnExit.Location = New System.Drawing.Point(430, 767)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(115, 79)
         Me.btnExit.TabIndex = 54
@@ -755,7 +755,7 @@ Partial Class MadLibsForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(904, 943)
+        Me.ClientSize = New System.Drawing.Size(904, 882)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnMakeMyStory)
