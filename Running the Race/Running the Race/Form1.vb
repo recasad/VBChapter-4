@@ -5,7 +5,7 @@
         Dim intTime3 As Integer
 
         If Integer.TryParse(txtTime1.Text, intTime1) &
-           If Integer.TryParse(txtTime2.Text, intTime2) Then
+            Integer.TryParse(txtTime2.Text, intTime2) Then
             If Integer.TryParse(txtTime3.Text, intTime3) Then
                 If intTime1 < intTime2 & intTime1 < intTime3 Then
                     lblFirst.Text = txtName1.Text
