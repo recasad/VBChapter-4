@@ -32,10 +32,6 @@
         Dim strSeasons As String
         Dim strHoliday As String
         Dim strFigure As String
-        Dim strError As String
-
-        ' Determine error string as message.
-        strError = "Please select an option!"
 
         ' Determine which Relative Radio Button is selected.
         If radMother.Checked = True Then
@@ -51,7 +47,7 @@
         ElseIf radUncle.Checked = True Then
             strRelative = "Uncle"
         Else
-            MessageBox.Show(strError)
+            MessageBox.Show("Please select a relative.")
         End If
 
         ' Determine which Season Radio Button is selected
@@ -64,7 +60,7 @@
         ElseIf radWinter.Checked = True Then
             strSeasons = "Winter"
         Else
-            MessageBox.Show(strError)
+            MessageBox.Show("Please select a season.")
         End If
 
         'Determine which Holiday Radio Button is selected
@@ -87,11 +83,10 @@
             strHoliday = "Thanksgiving"
             strFigure = "The Great Turkey"
         Else
-            MessageBox.Show(strError)
+            MessageBox.Show("Please select a holiday.")
         End If
 
         ' Display Title and Story Information.
-        frmStory.Show()
         frmStory.lblTitle.Text = txtNameRepeated.Text & "'s Holiday Adventure!!"
         frmStory.lblStory.Text = txtNameRepeated.Text &
             " wanted the " & txtAdjectiveRepeated.Text &
@@ -122,6 +117,15 @@
             txtNameRepeated.Text & " was overjoyed and " &
             strHoliday & " was saved."
 
+        If txtAdjectiveA.Text = ("") Or txtAdjectiveB.Text = ("") Or txtAdjectiveRepeated.Text = ("") Or
+            txtAdverbA.Text = ("") Or txtNameA.Text = ("") Or txtNameRepeated.Text = ("") Or
+            txtNounB.Text = ("") Or txtNounOneRepeated.Text = ("") Or txtNounTwoRepeated.Text = ("") Or
+            txtNumberA.Text = ("") Or txtNumberB.Text = ("") Or txtNumberC.Text = ("") Or txtPastTenseVerbA.Text = ("") Or
+            txtPastTenseVerbB.Text = ("") Or txtPluralNounA.Text = ("") Or txtYearA.Text = ("") Then
+            lblExamples.Text = "Please fill all boxes."
+        Else
+            frmStory.Show()
+        End If
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
